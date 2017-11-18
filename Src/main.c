@@ -138,7 +138,7 @@ int main(void)
   /* USER CODE BEGIN 3 */
 
     if(time_ovf(TIME_LAMP)){
-      set_time(TIME_LAMP,503);
+      set_time(TIME_LAMP,504);
       LampToggle();
       if(ReadLampON()) IndADC3=0;
     }
