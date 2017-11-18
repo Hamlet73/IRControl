@@ -120,32 +120,7 @@ int main(void)
   }
 
   /*##-3- TIM counter enable ################################################*/
-  if (HAL_TIM_Base_Start(&htim2) != HAL_OK)
-  {
-    /* Counter Enable Error */
-    Error_Handler();
-  }
-  
-  /* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-
-  while (1)
-  {
-  /* USER CODE END WHILE */
-
-  /* USER CODE BEGIN 3 */
-
-    if(time_ovf(TIME_LAMP)){
-      set_time(TIME_LAMP,505);
-      LampToggle();
-      if(ReadLampON()) IndADC3=0;
-    }
-  }
-  /* USER CODE END 3 */
-
-}
 
 /** System Clock Configuration
 */
