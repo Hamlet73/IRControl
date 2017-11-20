@@ -1,4 +1,5 @@
 *.[oa]
 /EWARM/IRControl
+/EWARM/settings
 *.mxproject
 *.scratch
